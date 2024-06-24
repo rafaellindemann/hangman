@@ -42,6 +42,9 @@ const Hangman = () => {
           {isWinner && <p>Parabéns! Você ganhou!</p>}
         </>
       )}
+      <footer>
+        <img className='ondas' src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg" alt="Animation — Try refreshing" />
+      </footer>
     </div>
   );
 };

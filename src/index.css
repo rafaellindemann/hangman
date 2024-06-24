@@ -2,19 +2,8 @@
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: normal;
-}
-:root {
-  --correct-color: green;
-  --incorrect-color: red;
-  --disabled-color: #ccc;
-  --button-bg-color: #f0f0f0;
-  --button-text-color: #000;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: var(--button-bg-color);
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -26,6 +15,33 @@ button {
   color: var(--button-text-color);
   border-radius: 10px;
 }
+
+:root {
+  --correct-color: green;
+  --incorrect-color: red;
+  --disabled-color: #ccc;
+  --button-bg-color: #f0f0f0;
+  --button-text-color: #000;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: var(--button-bg-color);
+  margin: 0; /* Adicione isso para remover a margem padrão */
+  min-height: 100vh; /* Isso garante que o corpo tenha pelo menos a altura da viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 button:disabled {
   background-color: var(--disabled-color);
@@ -43,42 +59,18 @@ button.incorrect {
 }
 
 div {
-  margin: 20px;
+  /* margin: 20px; */
   font-size: 24px;
 }
 
-
-/* body {
-  font-family: Arial, sans-serif;
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  background-color: #f0f0f0;
 }
 
-button {
-  margin: 5px;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
+footer img {
+  width: 100%;
+  height: auto;
 }
-
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-button.correct {
-  background-color: green;
-  color: white;
-}
-
-button.incorrect {
-  background-color: red;
-  color: white;
-}
-
-div {
-  margin: 20px;
-  font-size: 24px;
-} */
-
-
