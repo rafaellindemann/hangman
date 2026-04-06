@@ -4,7 +4,7 @@ import { ghPages } from 'vite-plugin-gh-pages';
 
 export default defineConfig({
   plugins: [react(), ghPages()],
-  base: '/hangman/', // Substitua por '/nome-do-repositorio/'
+  base: '/', // Substitua por '/nome-do-repositorio/'
 });
 
 
