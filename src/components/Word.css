@@ -1,3 +1,7 @@
 .palavra{
     font-size: 90px;
 }
+
+footer{
+    z-index: -1;
+}
